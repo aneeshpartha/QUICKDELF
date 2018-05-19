@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+body{
+    background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2012/10/Food.jpg) no-repeat center center fixed;
+}
+
+.vertical-offset-100{
+    padding-top:100px;
+}
+</style>
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://mymaplist.com/js/vendor/TweenLite.min.js"></script>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Quickdelf</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href=" {% url 'mainapp:index' %} ">Home</a></li>
+      <li><a href="#">Account</a></li>
+
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href=" {% url 'mainapp:login' %}" >Logout</a></li>
+        <li><a href="#" ></a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+    <div class="row vertical-offset-100">
+
+        {% for hotel in form %}
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="card" style="width: 18rem;height: 25rem;">
+                              <img class="card-img-top" style="max-width: 21rem" src={{ hotel.hotelimage }} alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title">{{ hotel.hotelname }}</h5>
+                                <p class="card-text">{{ hotel.hoteladdress }}</p>
+                                  <a href="/quickdelf/items/{{ hotel.id }}"  class="btn btn-primary">Select</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+	    {% endfor %}
+    </div>
+</div>
+
+
+

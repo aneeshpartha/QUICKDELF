@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+
+body{
+    background: url(https://cdn-images-1.medium.com/max/1920/1*BuFLVvsj1c4wHkrzHv8wNg.jpeg) no-repeat center center fixed;
+
+}
+
+.vertical-offset-100{
+    padding-top:100px;
+}
+</style>
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://mymaplist.com/js/vendor/TweenLite.min.js"></script>
+
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Quickdelf</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href=" {% url 'mainapp:index' %} ">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href=" {% url 'mainapp:cart' %}" >Cart</a></li>
+        <li><a href=" {% url 'mainapp:login' %}" >Logout</a></li>
+        <li><a href="#" ></a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<body>
+
+<div class="container">
+    <div class="row vertical-offset-100">
+    	<div class="col-md-4 col-md-offset-4">
+    		<div class="panel panel-default">
+			  	<div class="panel-heading">
+			    	<h3 class="panel-title">Transaction failed</h3>
+			 	</div>
+			  	<div class="panel-body">
+			    	<form accept-charset="UTF-8"  action="{% url 'mainapp:login' %}" role="form" method="post" >
+                         {% csrf_token %}
+                    <fieldset>
+                            <Label> Payment Sucessful !!! Your food is on the way </Label>
+			    		<input class="btn btn-lg btn-success btn-block" type="submit"  value="OK">
+			    	</fieldset>
+			      	</form>
+			    </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+
+</html>
