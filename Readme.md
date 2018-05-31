@@ -4,6 +4,8 @@ Quickdelf is a food ordering web application which is similar to leading food de
 
 [Demo of QuickDelf](https://youtu.be/TdWKZPwwflM)
 
+[![Demo](https://youtu.be/TdWKZPwwflM)](https://youtu.be/TdWKZPwwflM)
+
 ## Django framework:
 
 The application was built using Django framework following MVT architecture. The entire front end was built using HTML, CSS and Bootstrap. The views in the application are class-based views which are advanced in Django framework. I have followed all the standard procedures of Django such as to register the application, use of url.py file for url mappings, use of forms.py for building forms, use of templates folder for holding all template files etc. 
