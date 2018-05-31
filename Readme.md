@@ -2,9 +2,9 @@
 
 Quickdelf is a food ordering web application which is similar to leading food delivery services like Grubhub and postmates. The application is designed to order food from any of our favorite restaurants available in the city. For now, I have made a simple application without any location, but my future enhancement will be to order food based on the city we reside. The main purpose of the application is to order food based on the available restaurants and available dishes. The application consists of entire flow starting from logging in, selecting restaurant, selecting food, payment and logout.  
 
-[Demo of QuickDelf](https://youtu.be/TdWKZPwwflM)
+**Demo of QuickDelf - Click on the picture below**
 
-[![Demo](https://youtu.be/TdWKZPwwflM)](https://youtu.be/TdWKZPwwflM)
+[![1](https://user-images.githubusercontent.com/17997235/40793393-e843aa96-64c1-11e8-8e0e-3a155ddc59b8.png)](https://youtu.be/TdWKZPwwflM)
 
 ## Django framework:
 
