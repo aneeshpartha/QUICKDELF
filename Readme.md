@@ -68,6 +68,7 @@ Once the above commands are used the tables will be created automatically in dat
 ![14](https://user-images.githubusercontent.com/17997235/40793406-e9aa11fe-64c1-11e8-8133-510fd4795837.png)
 
 **Project structure**
+
 ![15](https://user-images.githubusercontent.com/17997235/40793407-e9c95654-64c1-11e8-9451-165e6bbb7ae8.png)
 
 
